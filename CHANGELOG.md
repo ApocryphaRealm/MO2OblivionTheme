@@ -13,11 +13,17 @@ First version. The owner: *"make an MO2 theme that matches the AMF Oblivion them
   * #6B563F lines;
   * #8A6A2C brass accent;
   * #D2C3A6 separator rows over parchment mod rows.
-* AMF's map-edge frame art round group boxes and tab panes, exported from AMF Oblivion's
-  `tools\make_mapedge_frame.py`.
-  * It is drawn at twice its size (52 px corners shown at 26) and its edges repeat rather than stretch.
-  * The builder gained `frame_slice` and `frame_mode` in `theme.json` for this; the other themes keep 26 and
-    stretch.
+* AMF's map-edge frame art, exported from AMF Oblivion's `tools\make_mapedge_frame.py`.
+  * Its edges repeat rather than stretch; the texture is twice its design size (52 px slices).
+  * It sits where the Njordlinger (Skyrim) MO2 theme puts its gold knotwork: round the list, tree and table views,
+    the locked dialog, menus and tooltips, with the same 20 px and 17 px borders. The owner: *"Refer to the Skyrim
+    theme for Mod Organizer 2 for where to place the gold knotwork"*.
+  * The mod list is framed too (the owner: *"I want the left pane to have the knotwork too"*). Njordlinger leaves it
+    unframed only because its knotwork's solid centre covered the rows; the map edge's centre is transparent, and MO2's
+    conflict highlight stays visible.
+  * Group boxes and tab panes get a plain ink line.
+  * The builder gained `frame_slice`, `frame_mode` and `frame_places` in `theme.json` for this; the other themes keep
+    26, stretch and their own places.
 * The Oblivion shape:
   * buttons edged in brown ink with a gold thread inside;
   * a gold thread in a ticked check box;
