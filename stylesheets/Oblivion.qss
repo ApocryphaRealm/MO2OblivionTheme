@@ -1,0 +1,411 @@
+/* Oblivion - a Mod Organizer 2 theme, version 1.0.0. BUILT by tools\build_themes.py from src\theme.qss.in and the
+   theme's palette; edit those, not this file. Colours are the Apocrypha Menu Framework "Oblivion" theme's: background
+   #e4dbcc, frame #241c16, lines #6b563f, text #2a1c12, secondary text #6f5d4c, accent #8a6a2c, with AMF's own graded tints
+   (lines at 55% for separators, 28% for hover, 14% for subtle fills; accent at 22% for selection, 42% when hovered). */
+
+/* ---- Base ---- */
+* {
+  outline: none; }
+QWidget {
+  background-color: #e4dbcc;
+  color: #2a1c12;
+  selection-background-color: rgba(138, 106, 44, 0.42);
+  selection-color: #2a1c12; }
+QWidget:disabled {
+  color: #6f5d4c; }
+QMainWindow, QDialog {
+  background-color: #e4dbcc;
+  background-image: url("./Oblivion/art/background.png"); }
+QMainWindow::separator {
+  background-color: rgba(107, 86, 63, 0.14);
+  width: 4px;
+  height: 4px; }
+QToolTip {
+  background-color: #e4dbcc;
+  color: #2a1c12;
+  border: 1px solid #6b563f;
+  padding: 4px; }
+QLabel, QCheckBox, QRadioButton {
+  background-color: transparent; }
+LinkLabel {
+  qproperty-linkColor: #8a6a2c; }
+QSplitter::handle {
+  background-color: transparent; }
+QSplitter::handle:hover {
+  background-color: rgba(107, 86, 63, 0.28); }
+
+/* ---- Frames: the theme's own frame art where it has one ---- */
+QGroupBox {
+  border: 1px solid #6b563f;
+  margin-top: 1.4em;
+  padding-top: 6px; }
+QGroupBox::title {
+  subcontrol-origin: margin;
+  subcontrol-position: top left;
+  left: 10px;
+  padding: 0 4px;
+  color: #2a1c12; }
+QTabWidget::pane {
+  border: 1px solid #6b563f;
+  top: -1px; }
+QFrame[frameShape="4"], QFrame[frameShape="5"] {
+  color: rgba(107, 86, 63, 0.55); }
+
+/* ---- Menus and the toolbar ---- */
+QMenuBar {
+  background-color: #e4dbcc;
+  border-bottom: 1px solid rgba(107, 86, 63, 0.55); }
+QMenuBar::item {
+  background: transparent;
+  padding: 4px 10px; }
+QMenuBar::item:selected {
+  background-color: rgba(107, 86, 63, 0.28); }
+QMenu {
+  background-color: #e4dbcc;
+  border: 1px solid #6b563f;
+  padding: 4px 0; }
+QMenu::item {
+  padding: 5px 24px 5px 24px;
+  background: transparent; }
+QMenu::item:selected {
+  background-color: rgba(138, 106, 44, 0.42);
+  color: #2a1c12; }
+QMenu::item:disabled {
+  color: #6f5d4c; }
+QMenu::separator {
+  height: 1px;
+  background-color: rgba(107, 86, 63, 0.55);
+  margin: 4px 8px; }
+QToolBar {
+  background-color: #e4dbcc;
+  border: none;
+  border-bottom: 1px solid rgba(107, 86, 63, 0.55);
+  spacing: 4px;
+  padding: 2px; }
+QToolBar::separator {
+  background-color: rgba(107, 86, 63, 0.55);
+  width: 1px;
+  margin: 6px 4px; }
+QToolButton {
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 3px; }
+QToolButton:hover, QToolButton:focus {
+  background-color: rgba(107, 86, 63, 0.28);
+  border: 1px solid rgba(107, 86, 63, 0.55); }
+QToolButton:pressed, QToolButton:checked {
+  background-color: rgba(138, 106, 44, 0.22);
+  border: 1px solid #6b563f; }
+QToolButton::menu-indicator {
+  image: url("./Oblivion/art/arrow-down.svg");
+  width: 8px;
+  height: 8px;
+  subcontrol-position: bottom right;
+  subcontrol-origin: padding; }
+QToolButton::menu-button {
+  border: none;
+  width: 12px; }
+
+/* ---- Buttons: the theme's plate shape ---- */
+QPushButton {
+  border-image: url("./Oblivion/art/button.svg") 8 8 8 8 stretch;
+  border-width: 8px;
+  padding: -4px 6px;
+  min-height: 14px;
+  min-width: 48px;
+  color: #2a1c12; }
+QPushButton:hover, QPushButton:focus {
+  border-image: url("./Oblivion/art/button-hover.svg") 8 8 8 8 stretch; }
+QPushButton:pressed, QPushButton:checked {
+  border-image: url("./Oblivion/art/button-pressed.svg") 8 8 8 8 stretch; }
+QPushButton:disabled {
+  border-image: url("./Oblivion/art/button-disabled.svg") 8 8 8 8 stretch;
+  color: #6f5d4c; }
+QPushButton::menu-indicator {
+  image: url("./Oblivion/art/arrow-down.svg");
+  width: 8px;
+  height: 8px;
+  subcontrol-position: right center;
+  subcontrol-origin: padding;
+  right: 2px; }
+QDialogButtonBox QPushButton {
+  min-width: 72px; }
+
+/* ---- Inputs ---- */
+QLineEdit, QTextEdit, QPlainTextEdit, QAbstractSpinBox {
+  background-color: #dcd2c2;
+  border: 1px solid rgba(107, 86, 63, 0.55);
+  padding: 3px;
+  selection-background-color: rgba(138, 106, 44, 0.42); }
+QLineEdit:hover, QTextEdit:hover, QPlainTextEdit:hover, QAbstractSpinBox:hover {
+  border: 1px solid #6b563f; }
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus, QAbstractSpinBox:focus {
+  border: 1px solid #6b563f;
+  background-color: #d4caba; }
+QLineEdit[valid-filter=false] {
+  background-color: #b57a75; }
+QAbstractSpinBox::up-button, QAbstractSpinBox::down-button {
+  background: transparent;
+  border: none;
+  width: 14px; }
+QAbstractSpinBox::up-arrow {
+  image: url("./Oblivion/art/arrow-up.svg");
+  width: 8px;
+  height: 8px; }
+QAbstractSpinBox::down-arrow {
+  image: url("./Oblivion/art/arrow-down.svg");
+  width: 8px;
+  height: 8px; }
+QComboBox {
+  background-color: #dcd2c2;
+  border: 1px solid rgba(107, 86, 63, 0.55);
+  padding: 3px 22px 3px 6px;
+  min-height: 18px; }
+QComboBox:hover, QComboBox:on {
+  border: 1px solid #6b563f; }
+QComboBox::drop-down {
+  border: none;
+  width: 20px;
+  subcontrol-origin: padding;
+  subcontrol-position: top right; }
+QComboBox::down-arrow {
+  image: url("./Oblivion/art/arrow-down.svg");
+  width: 10px;
+  height: 10px; }
+QComboBox QAbstractItemView {
+  background-color: #e4dbcc;
+  border: 1px solid #6b563f;
+  selection-background-color: rgba(138, 106, 44, 0.42);
+  outline: none; }
+
+/* ---- Check boxes and radio buttons, in the list views too ---- */
+QCheckBox, QRadioButton {
+  spacing: 6px; }
+QCheckBox::indicator, QTreeView::indicator, QListView::indicator, QTableView::indicator, QGroupBox::indicator {
+  width: 14px;
+  height: 14px; }
+QCheckBox::indicator:unchecked, QTreeView::indicator:unchecked, QListView::indicator:unchecked, QTableView::indicator:unchecked, QGroupBox::indicator:unchecked {
+  image: url("./Oblivion/art/check-off.svg"); }
+QCheckBox::indicator:unchecked:hover, QTreeView::indicator:unchecked:hover, QListView::indicator:unchecked:hover, QGroupBox::indicator:unchecked:hover {
+  image: url("./Oblivion/art/check-off-hover.svg"); }
+QCheckBox::indicator:checked, QTreeView::indicator:checked, QListView::indicator:checked, QTableView::indicator:checked, QGroupBox::indicator:checked {
+  image: url("./Oblivion/art/check-on.svg"); }
+QCheckBox::indicator:indeterminate, QTreeView::indicator:indeterminate {
+  image: url("./Oblivion/art/check-part.svg"); }
+QCheckBox::indicator:disabled, QTreeView::indicator:disabled {
+  image: url("./Oblivion/art/check-disabled.svg"); }
+QRadioButton::indicator {
+  width: 14px;
+  height: 14px; }
+QRadioButton::indicator:unchecked {
+  image: url("./Oblivion/art/radio-off.svg"); }
+QRadioButton::indicator:unchecked:hover {
+  image: url("./Oblivion/art/radio-off-hover.svg"); }
+QRadioButton::indicator:checked {
+  image: url("./Oblivion/art/radio-on.svg"); }
+
+/* ---- Lists, trees and tables ---- */
+QAbstractItemView {
+  background-color: #e4dbcc;
+  alternate-background-color: #e4dbcc;
+  border: 1px solid rgba(107, 86, 63, 0.55);
+  selection-background-color: rgba(138, 106, 44, 0.42);
+  selection-color: #2a1c12; }
+QAbstractItemView[filtered=true] {
+  border: 1px solid #8a6a2c; }
+QAbstractItemView::item:hover {
+  background-color: rgba(107, 86, 63, 0.28); }
+QAbstractItemView::item:selected {
+  background-color: rgba(138, 106, 44, 0.42);
+  color: #2a1c12; }
+QTreeView::branch {
+  background: transparent; }
+QTreeView::branch:has-children:!has-siblings:closed, QTreeView::branch:closed:has-children:has-siblings {
+  image: url("./Oblivion/art/arrow-right.svg"); }
+QTreeView::branch:open:has-children:!has-siblings, QTreeView::branch:open:has-children:has-siblings {
+  image: url("./Oblivion/art/arrow-down.svg"); }
+QHeaderView {
+  background-color: #e4dbcc;
+  border: none; }
+QHeaderView::section {
+  background-color: #e4dbcc;
+  color: #6f5d4c;
+  border: none;
+  border-right: 1px solid rgba(107, 86, 63, 0.14);
+  border-bottom: 1px solid rgba(107, 86, 63, 0.55);
+  padding: 4px 4px; }
+QHeaderView::section:hover {
+  background-color: rgba(107, 86, 63, 0.28);
+  color: #2a1c12; }
+QHeaderView::up-arrow {
+  image: url("./Oblivion/art/arrow-up.svg");
+  width: 8px;
+  height: 8px; }
+QHeaderView::down-arrow {
+  image: url("./Oblivion/art/arrow-down.svg");
+  width: 8px;
+  height: 8px; }
+QTableView QTableCornerButton::section {
+  background-color: #e4dbcc;
+  border: none; }
+
+/* ---- The frame art where the Njordlinger (Skyrim) MO2 theme puts its gold knotwork (the owner, 2026-10-02): round the
+   list, tree and table views, the locked dialog, menus and tooltips - the same border widths (20 px, 17 px). The mod
+   list is framed too (the owner: "I want the left pane to have the knotwork too"): Njordlinger turns it off there only
+   because its knotwork image has a solid centre that covered the rows; the map edge's centre is transparent. Placed
+   after the menu and tooltip rules, so it wins over them. ---- */
+ModListView,
+QTreeView,
+QTreeWidget,
+QListView,
+QTableView,
+QDialog#LockedDialog {
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: url("./Oblivion/art/frame.png") 52 repeat repeat; }
+QMenu,
+QToolTip {
+  border-width: 17px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: url("./Oblivion/art/frame.png") 52 repeat repeat; }
+
+/* ---- The mod list: separators and mods coloured separately. With collapsible separators MO2's list is a tree whose
+   parent rows are the separators, so ::item:has-children is a separator and nothing else; mods are the view's own
+   background, and no ::item rule touches a mod row, so MO2's conflict highlight stays visible. ---- */
+QTreeView#modList {
+  background-color: #e4dbcc;
+  alternate-background-color: #e4dbcc; }
+QTreeView#modList::item:has-children {
+  background-color: #d2c3a6;
+  color: #2a1c12; }
+QTreeView#modList::item:has-children:hover {
+  background-color: rgba(107, 86, 63, 0.28); }
+QTreeView#modList::item:has-children:selected {
+  background-color: rgba(138, 106, 44, 0.42); }
+
+/* ---- Tabs ---- */
+QTabBar {
+  background: transparent; }
+QTabBar::tab {
+  background-color: transparent;
+  color: #6f5d4c;
+  border: 1px solid transparent;
+  border-bottom: 1px solid rgba(107, 86, 63, 0.55);
+  padding: 5px 12px;
+  margin-right: 2px; }
+QTabBar::tab:hover {
+  color: #2a1c12;
+  background-color: rgba(107, 86, 63, 0.28); }
+QTabBar::tab:selected {
+  color: #2a1c12;
+  background-color: rgba(138, 106, 44, 0.22);
+  border: 1px solid #6b563f;
+  border-bottom: 1px solid #8a6a2c; }
+QTabBar::tab:disabled {
+  color: rgba(107, 86, 63, 0.55); }
+QTabBar QToolButton {
+  background-color: #e4dbcc;
+  border: 1px solid rgba(107, 86, 63, 0.55); }
+QTabBar QToolButton::left-arrow {
+  image: url("./Oblivion/art/arrow-left.svg"); }
+QTabBar QToolButton::right-arrow {
+  image: url("./Oblivion/art/arrow-right.svg"); }
+
+/* ---- Scrollbars ---- */
+QScrollBar:vertical {
+  background-color: #e4dbcc;
+  width: 12px;
+  margin: 0; }
+QScrollBar:horizontal {
+  background-color: #e4dbcc;
+  height: 12px;
+  margin: 0; }
+QScrollBar::handle:vertical {
+  background-color: rgba(107, 86, 63, 0.55);
+  min-height: 24px;
+  margin: 2px 3px; }
+QScrollBar::handle:horizontal {
+  background-color: rgba(107, 86, 63, 0.55);
+  min-width: 24px;
+  margin: 3px 2px; }
+QScrollBar::handle:hover {
+  background-color: #6b563f; }
+QScrollBar::add-line, QScrollBar::sub-line {
+  width: 0;
+  height: 0;
+  border: none;
+  background: none; }
+QScrollBar::add-page, QScrollBar::sub-page {
+  background: none; }
+QAbstractScrollArea::corner {
+  background-color: #e4dbcc; }
+
+/* ---- Progress, sliders, the rest ---- */
+QProgressBar {
+  background-color: #dcd2c2;
+  border: 1px solid rgba(107, 86, 63, 0.55);
+  text-align: center;
+  color: #2a1c12; }
+QProgressBar::chunk {
+  background-color: rgba(138, 106, 44, 0.7); }
+QSlider::groove:horizontal {
+  height: 2px;
+  background-color: rgba(107, 86, 63, 0.55); }
+QSlider::handle:horizontal {
+  background-color: #8a6a2c;
+  border: 1px solid #6b563f;
+  width: 10px;
+  margin: -6px 0; }
+QStatusBar {
+  background-color: #e4dbcc;
+  border-top: 1px solid rgba(107, 86, 63, 0.55); }
+QStatusBar::item {
+  border: none; }
+QDockWidget::title {
+  background-color: #e4dbcc;
+  border-bottom: 1px solid rgba(107, 86, 63, 0.55);
+  padding: 4px; }
+QLCDNumber {
+  background-color: #dcd2c2;
+  border: 1px solid rgba(107, 86, 63, 0.55);
+  color: #2a1c12; }
+SaveGameInfoWidget {
+  background-color: #e4dbcc;
+  border: 1px solid #6b563f;
+  color: #2a1c12; }
+
+/* ---- Icons: Njordlinger's set in every theme (the owner, 2026-09-26: "i like the icons in njordlinger so keep all of them
+   for every theme"). MO2 copies qproperty-icon from dummy buttons named after its toolbar actions onto the actions
+   (src/mainwindow.cpp, v2.5.2); the other names are MO2's own buttons. ---- */
+#actionChange_Game { qproperty-icon: url("./Oblivion/icons/actionChange_Game.png"); }
+#actionInstallMod { qproperty-icon: url("./Oblivion/icons/actionInstallMod.png"); }
+#actionNexus { qproperty-icon: url("./Oblivion/icons/actionNexus.png"); }
+#actionModPage { qproperty-icon: url("./Oblivion/icons/actionModPage.png"); }
+#actionAdd_Profile { qproperty-icon: url("./Oblivion/icons/actionAdd_Profile.png"); }
+#action_Refresh { qproperty-icon: url("./Oblivion/icons/action_Refresh.png"); }
+#actionModify_Executables { qproperty-icon: url("./Oblivion/icons/actionModify_Executables.png"); }
+#actionTool { qproperty-icon: url("./Oblivion/icons/actionTool.png"); }
+#actionSettings { qproperty-icon: url("./Oblivion/icons/actionSettings.png"); }
+#actionEndorseMO { qproperty-icon: url("./Oblivion/icons/actionEndorseMO.png"); }
+#actionNotifications { qproperty-icon: url("./Oblivion/icons/problems.svg"); }
+#actionUpdate { qproperty-icon: url("./Oblivion/icons/actionUpdate.png"); }
+#actionHelp { qproperty-icon: url("./Oblivion/icons/actionHelp.png"); }
+
+#refreshButton, #btnRefreshData, #dataTabRefresh, #btnRefreshDownloads, #refresh {
+  qproperty-icon: url("./Oblivion/icons/action_Refresh.png"); icon-size: 18px; }
+#visitNexus { qproperty-icon: url("./Oblivion/icons/actionNexus.png"); }
+#endorse { qproperty-icon: url("./Oblivion/icons/actionEndorseMO.png"); icon-size: 18px; }
+#listOptionsBtn { qproperty-icon: url("./Oblivion/icons/dots.svg"); }
+#openFolderMenu { qproperty-icon: url("./Oblivion/icons/folder.svg"); icon-size: 18px; }
+#restoreModsButton, #restoreButton { qproperty-icon: url("./Oblivion/icons/restore.svg"); icon-size: 18px; }
+#saveModsButton, #saveButton { qproperty-icon: url("./Oblivion/icons/backup.svg"); icon-size: 18px; }
+#clearFiltersButton { qproperty-icon: url("./Oblivion/icons/cross.svg"); }
+#bossButton { qproperty-icon: url("./Oblivion/icons/sort.svg"); icon-size: 18px; }
+#clearCacheButton, #revokeNexusAuthButton, #nexusDisconnect { qproperty-icon: url("./Oblivion/icons/cross.svg"); icon-size: 18px; }
+#deactivateESP { qproperty-icon: url("./Oblivion/icons/minus.svg"); }
+#activateESP { qproperty-icon: url("./Oblivion/icons/plus.svg"); }
+#startButton { qproperty-icon: url("./Oblivion/icons/play.svg"); }
+#linkButton { qproperty-icon: url("./Oblivion/icons/shortcut.svg"); icon-size: 18px; }
+#track { qproperty-icon: url("./Oblivion/icons/pin.svg"); }

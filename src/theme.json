@@ -1,0 +1,16 @@
+{
+  "title": "Oblivion",
+  "art": "oblivion",
+  "shape": "oblivion",
+  "frame_slice": 52,
+  "frame_mode": "repeat",
+  "frame_places": "njordlinger",
+  "bg": "#E4DBCC",
+  "frame": "#241C16",
+  "border": "#6B563F",
+  "text": "#2A1C12",
+  "dim": "#6F5D4C",
+  "accent": "#8A6A2C",
+  "separator": "#D2C3A6",
+  "gold": "#C9A24A"
+}
