@@ -1,12 +1,13 @@
-# Oblivion MO2 Theme
+# Oblivion - a Mod Organizer 2 theme
 
 A Mod Organizer 2 theme in the look of Apocrypha Menu Framework for Oblivion Remastered's default theme, "Oblivion":
 parchment panels, brown ink text and lines, a brass accent, and an embroidered map's edge in gold and brown round the
 panels. That edge is a couched gold cord, a compass star in a stitched ring at each corner and a brown running stitch.
 
 Separators and mods are coloured separately (separators are the mod list's parent rows; MO2's conflict highlight on
-mods stays visible). The map-edge frame sits round panels and group boxes, tiled along each side so the stitches keep
-their size. Buttons are edged in brown ink with a fine gold thread inside, ticked check boxes take the gold thread, and
+mods stays visible). The map-edge frame sits where the Njordlinger (Skyrim) MO2 theme puts its gold knotwork - round
+the mod list, the plugin list and the other list, tree and table views, the log, menus and tooltips - tiled along each
+side so the stitches keep their size. Buttons are edged in brown ink with a fine gold thread inside, ticked check boxes take the gold thread, and
 a selected radio button shows the map edge's compass star. The toolbar and MO2's small buttons carry the Njordlinger
 icon set in the theme's ink colour.
 

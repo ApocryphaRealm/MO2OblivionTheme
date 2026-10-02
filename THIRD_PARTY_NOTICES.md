@@ -1,4 +1,4 @@
-# Third-party notices - Oblivion MO2 Theme
+# Third-party notices - Oblivion (Mod Organizer 2 theme)
 
 No third-party files are included.
 

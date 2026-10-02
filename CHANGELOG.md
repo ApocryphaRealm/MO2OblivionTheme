@@ -1,4 +1,4 @@
-# Changelog - Oblivion MO2 Theme
+# Changelog - Oblivion (Mod Organizer 2 theme)
 
 Versions are issued by the project's version gate. Written as the change happens (rule 61).
 

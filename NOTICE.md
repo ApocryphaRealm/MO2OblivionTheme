@@ -1,4 +1,4 @@
-# Oblivion MO2 Theme - copyright and licence
+# Oblivion (Mod Organizer 2 theme) - copyright and licence
 
 Copyright (C) 2026 ApocryphaRealm
 
